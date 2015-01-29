@@ -22,7 +22,7 @@
 		}
 		
 		// Check if phone has been entered and is valid
-		if (!$_POST['phone'] || !filter_var($_POST['phone'], FILTER_VALIDATE_PHONE)) {
+		if (!$_POST['phone']) {
 			$errPhone = 'Please enter a valid phone number';
 		}
 
